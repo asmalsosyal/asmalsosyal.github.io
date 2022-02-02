@@ -1,0 +1,202 @@
+/* Copyright 2013 The Chromium Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file. */
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.icon {
+  -webkit-user-select: none;
+  user-select: none;
+  display: inline-block;
+}
+
+.icon-offline {
+  content: -webkit-image-set( url(assets/default_100_percent/100-error-offline.png) 1x, url(assets/default_200_percent/200-error-offline.png) 2x);
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* Offline page */
+
+.offline .interstitial-wrapper {
+  color: #2b2b2b;
+  font-size: 1em;
+  line-height: 1.55;
+  margin: 0 auto;
+  max-width: 600px;
+  padding-top: 100px;
+  width: 100%;
+}
+
+.offline .runner-container {
+  height: 150px;
+  max-width: 600px;
+  overflow: hidden;
+  position: absolute;
+  top: 35px;
+  width: 44px;
+}
+
+.offline .runner-canvas {
+  height: 150px;
+  max-width: 600px;
+  opacity: 1;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.offline .controller {
+  background: rgba(247, 247, 247, .1);
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+}
+
+#offline-resources {
+  display: none;
+}
+
+@media (max-width: 420px) {
+  .suggested-left > #control-buttons, .suggested-right > #control-buttons {
+    float: none;
+  }
+  .snackbar {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media (max-height: 350px) {
+  h1 {
+    margin: 0 0 15px;
+  }
+  .icon-offline {
+    margin: 0 0 10px;
+  }
+  .interstitial-wrapper {
+    margin-top: 5%;
+  }
+  .nav-wrapper {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 736px) and (orientation: landscape) {
+  .offline .interstitial-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 736px) and (min-height: 240px) and (max-height: 420px) and (orientation:landscape) {
+  .interstitial-wrapper {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-height: 240px) and (orientation: landscape) {
+  .offline .interstitial-wrapper {
+    margin-bottom: 90px;
+  }
+  .icon-offline {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-height: 320px) and (orientation: landscape) {
+  .icon-offline {
+    margin-bottom: 0;
+  }
+  .offline .runner-container {
+    top: 10px;
+  }
+}
+
+@media (max-width: 240px) {
+  .interstitial-wrapper {
+    overflow: inherit;
+    padding: 0 8px;
+  }
+}
+
+*{
+	
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	
+	
+	}
+	
+ h2 {
+	font-family: 'Oswald', sans-serif;
+	color: #212121;
+	font-size: 30px;
+	font-weight: bold;
+	padding-left: 150px;
+	margin-top: 50px;
+  }
+	
+.sosyalbutonlar{
+	margin-top: 50px;
+	display: inline-block;
+	position: relative;
+	left: 200px;
+  	
+	
+	}
+	
+.sosyalbutonlar a  {
+  background:#a1a1a1;
+	text-decoration: none;
+	color: #FFF;
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	border-radius: 10px;
+	margin-right: 20px;
+	font-size: 30px;
+	overflow: hidden;
+	position: relative;
+	line-height: 60px;
+	text-align: center;
+  }
+    
+.sosyalbutonlar a{  
+   transition: transform 0.4s linear 0s, 
+	 border-top-left-radius 0.1s linear 0s, 
+	 border-top-right-radius 0.1s linear 0.1s, 
+	 border-bottom-right-radius 0.1s linear 0.2s, 
+	 border-bottom-left-radius 0.1s linear 0.3s;
+ 	
+}
+
+
+  .sosyalbutonlar .twitter:hover   {
+      background-color: #00aced;
+      transform: rotate(360deg);
+      border-radius: 50%;	 
+}
+  
+
+ .sosyalbutonlar .instagram:hover   {
+      background-color: #bc2a8d;
+      transform: rotate(360deg);
+      border-radius: 50%;	 
+}
